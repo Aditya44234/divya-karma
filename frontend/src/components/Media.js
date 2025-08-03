@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
-import { Play, Image as ImageIcon, Calendar, Eye } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
+import { Calendar, Eye, Image as ImageIcon, Play } from 'lucide-react';
+import { useState } from 'react';
 import { mediaData } from '../mock';
+import { Badge } from './ui/badge';
+import { Button } from './ui/button';
+import { Card, CardContent } from './ui/card';
 
 const Media = () => {
   const [activeTab, setActiveTab] = useState('photos');
   const [selectedMedia, setSelectedMedia] = useState(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const handlePhotoClick = (photo) => {
     setSelectedMedia(photo);
   };
 
+  const handleVideoClick = (video) => {
+    setSelectedVideo(video);
+  };
+
   const closeModal = () => {
     setSelectedMedia(null);
+  };
+
+  const closeVideoModal = () => {
+    setSelectedVideo(null);
   };
 
   return (
@@ -80,7 +89,7 @@ const Media = () => {
                   <img
                     src={photo.url}
                     alt={photo.caption}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4">
@@ -108,9 +117,10 @@ const Media = () => {
               <Card 
                 key={video.id} 
                 className="group cursor-pointer overflow-hidden border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                onClick={() => handleVideoClick(video)}
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <video
                     src={video.thumbnail}
                     alt={video.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -123,19 +133,24 @@ const Media = () => {
                   <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
                     {video.duration}
                   </div>
+                  <div className="absolute top-2 left-2">
+                    <Badge className="bg-orange-500 text-white text-xs">
+                      {video.ceremony}
+                    </Badge>
+                  </div>
                 </div>
                 <CardContent className="p-4">
                   <h3 className="font-semibold text-gray-900 mb-2">{video.title}</h3>
+                  <p className="text-sm text-gray-600 mb-3 line-clamp-2">{video.description}</p>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <Calendar size={14} />
-                    <span>Sacred Teaching</span>
+                    <span>{video.ceremony}</span>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
         )}
-
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <Card className="max-w-2xl mx-auto bg-gradient-to-r from-orange-100 to-amber-100 border-orange-200">
@@ -177,7 +192,7 @@ const Media = () => {
                 className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white"
                 onClick={closeModal}
               >
-                ✕
+                <X size={20} />
               </Button>
             </div>
             <div className="p-6">
@@ -185,6 +200,57 @@ const Media = () => {
                 {selectedMedia.ceremony}
               </Badge>
               <p className="text-gray-700 leading-relaxed">{selectedMedia.caption}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Video Modal */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeVideoModal}>
+          <div className="max-w-4xl w-full bg-white rounded-lg overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="relative">
+              <div className="aspect-video w-full">
+                {selectedVideo.videoUrl.includes('youtube.com') ? (
+                  <iframe
+                    src={selectedVideo.videoUrl}
+                    title={selectedVideo.title}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <video
+                    src={selectedVideo.videoUrl}
+                    title={selectedVideo.title}
+                    className="w-full h-full"
+                    controls
+                    autoPlay
+                    preload="metadata"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white z-10"
+                onClick={closeVideoModal}
+              >
+                <X size={20} />
+              </Button>
+            </div>
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-3">
+                <Badge className="bg-orange-500 text-white">
+                  {selectedVideo.ceremony}
+                </Badge>
+                <span className="text-sm text-gray-500">{selectedVideo.duration}</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{selectedVideo.title}</h3>
+              <p className="text-gray-700 leading-relaxed">{selectedVideo.description}</p>
             </div>
           </div>
         </div>

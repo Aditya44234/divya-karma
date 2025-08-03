@@ -1,8 +1,7 @@
-import React from 'react';
-import { GraduationCap, Award, Heart, BookOpen, Star } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
+import { Award, BookOpen, Heart, Star } from 'lucide-react';
 import { aboutData, priestData } from '../mock';
+import { Badge } from './ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const About = () => {
   return (
@@ -30,9 +29,9 @@ const About = () => {
             <Card className="overflow-hidden border-orange-200 shadow-xl">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1583048721587-f0f9dcaf7c3b?w=500&h=600&fit=crop&crop=face"
+                  src="/images/pandit.jpg"
                   alt="Pandit Mohan Joshi"
-                  className="w-full h-96 object-cover"
+                  className="w-full h-96  w-50 object-contain bg-orange-50"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">

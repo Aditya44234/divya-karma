@@ -5,43 +5,48 @@ export const priestData = {
   title: "Divya Karm",
   shloka: "ॐ नमो भगवते वासुदेवाय",
   shlokaTranslation: "Om Namo Bhagavate Vasudevaya",
-  description: "Experienced Hindu priest dedicated to preserving ancient traditions and conducting sacred rituals with devotion and authenticity.",
+  description:
+    "Experienced Hindu priest dedicated to preserving ancient traditions and conducting sacred rituals with devotion and authenticity.",
   experience: "10+ years",
-  location: "Old City, Hyderabad"
+  location: "Old City, Hyderabad",
 };
 
 export const aboutData = {
-  biography: "Pandit Mohan Joshi has dedicated over 25 years of his life to the sacred service of performing Hindu rituals and ceremonies. Born into a family of learned priests, he began his spiritual journey at an early age under the guidance of his grandfather, a renowned Sanskrit scholar.",
+  biography:
+    "Pandit Mohan Joshi has dedicated over 10 years of his life to the sacred service of performing Hindu rituals and ceremonies.",
   education: [
     "Vedic Studies from Kashi Vishwanath Sanskrit Vidyapeeth",
     "Advanced Ritual Procedures from Shankaracharya Sanskrit University",
-    "Certification in Tantric Rituals and Mantras"
+    "Certification in Tantric Rituals and Mantras",
   ],
   specializations: [
     "Vedic Wedding Ceremonies",
     "Griha Pravesh Rituals",
     "Sacred Thread Ceremonies",
-    "Spiritual Healing Sessions"
+    "Spiritual Healing Sessions",
   ],
-  philosophy: "I believe that every ritual should be performed with complete dedication, proper understanding of Sanskrit mantras, and genuine devotion to create positive energy and spiritual upliftment for all participants."
+  philosophy:
+    "I believe that every ritual should be performed with complete dedication, proper understanding of Sanskrit mantras, and genuine devotion to create positive energy and spiritual upliftment for all participants.",
 };
 
 export const servicesData = [
   {
     id: 1,
     name: "Griha Pravesh",
-    description: "Sacred house warming ceremony to invoke divine blessings for your new home",
+    description:
+      "Sacred house warming ceremony to invoke divine blessings for your new home",
     duration: "2-3 hours",
     price: "₹5,000 - ₹8,000",
-    icon: "home"
+    icon: "home",
   },
   {
     id: 2,
     name: "Satyanarayan Katha",
-    description: "Monthly worship ceremony for prosperity and well-being of the family",
+    description:
+      "Monthly worship ceremony for prosperity and well-being of the family",
     duration: "2 hours",
-    price: "₹3,000 - ₹5,000", 
-    icon: "book-open"
+    price: "₹3,000 - ₹5,000",
+    icon: "book-open",
   },
   {
     id: 3,
@@ -49,15 +54,16 @@ export const servicesData = [
     description: "Sacred fire ceremony for purification and divine blessings",
     duration: "1-2 hours",
     price: "₹2,500 - ₹4,000",
-    icon: "flame"
+    icon: "flame",
   },
   {
     id: 4,
     name: "Wedding Ceremony",
-    description: "Complete Vedic wedding rituals with proper mantras and traditions",
+    description:
+      "Complete Vedic wedding rituals with proper mantras and traditions",
     duration: "4-6 hours",
     price: "₹15,000 - ₹25,000",
-    icon: "heart"
+    icon: "heart",
   },
   {
     id: 5,
@@ -65,7 +71,7 @@ export const servicesData = [
     description: "Traditional first haircut ceremony for children",
     duration: "1 hour",
     price: "₹1,500 - ₹2,500",
-    icon: "scissors"
+    icon: "scissors",
   },
   {
     id: 6,
@@ -73,7 +79,7 @@ export const servicesData = [
     description: "Ancestral worship ceremonies for spiritual peace",
     duration: "2-3 hours",
     price: "₹4,000 - ₹6,000",
-    icon: "users"
+    icon: "users",
   },
   {
     id: 7,
@@ -81,7 +87,7 @@ export const servicesData = [
     description: "Planetary peace ceremony to remove astrological obstacles",
     duration: "2 hours",
     price: "₹3,500 - ₹5,500",
-    icon: "sun"
+    icon: "sun",
   },
   {
     id: 8,
@@ -89,8 +95,8 @@ export const servicesData = [
     description: "Special ceremony to remove serpent dosha effects",
     duration: "3 hours",
     price: "₹5,000 - ₹8,000",
-    icon: "shield"
-  }
+    icon: "shield",
+  },
 ];
 
 export const testimonialsData = [
@@ -100,15 +106,15 @@ export const testimonialsData = [
     location: "Andheri, Mumbai",
     text: "Pandit Mohan ji performed our Griha Pravesh with such devotion and knowledge. His explanation of each ritual made the ceremony very meaningful for our family. Highly recommended!",
     rating: 5,
-    ceremony: "Griha Pravesh"
+    ceremony: "Griha Pravesh",
   },
   {
     id: 2,
-    name: "Priya Patel", 
+    name: "Priya Patel",
     location: "Bandra, Mumbai",
     text: "We had our daughter's wedding conducted by Pandit ji. His attention to Vedic traditions and perfect pronunciation of mantras made our special day truly blessed.",
     rating: 5,
-    ceremony: "Wedding Ceremony"
+    ceremony: "Wedding Ceremony",
   },
   {
     id: 3,
@@ -116,59 +122,104 @@ export const testimonialsData = [
     location: "Powai, Mumbai",
     text: "Regular Satyanarayan Katha at our home. Pandit Mohan ji is very punctual, knowledgeable, and creates a very peaceful atmosphere. Our whole family feels blessed.",
     rating: 5,
-    ceremony: "Satyanarayan Katha"
+    ceremony: "Satyanarayan Katha",
   },
   {
     id: 4,
     name: "Sunita Jain",
-    location: "Juhu, Mumbai", 
+    location: "Juhu, Mumbai",
     text: "The Navgraha Shanti ceremony helped us overcome many obstacles. Pandit ji's guidance and positive energy brought peace to our lives.",
     rating: 5,
-    ceremony: "Navgraha Shanti"
-  }
+    ceremony: "Navgraha Shanti",
+  },
 ];
 
 export const mediaData = {
   photos: [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=400&fit=crop",
+      url: "/images/havan.jpg",
       caption: "Sacred Havan ceremony with devotees",
-      ceremony: "Havan"
+      ceremony: "Havan",
     },
     {
-      id: 2, 
-      url: "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=500&h=400&fit=crop",
+      id: 2,
+      url: "/images/wedding.jpg",
       caption: "Traditional wedding rituals",
-      ceremony: "Wedding"
+      ceremony: "Wedding",
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=400&fit=crop",
+      url: "/images/grihapravesh.jpg",
       caption: "Griha Pravesh blessing ceremony",
-      ceremony: "Griha Pravesh"
+      ceremony: "Griha Pravesh",
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1585252906018-0dff6ba5c96a?w=500&h=400&fit=crop",
+      url: "/images/satyanaraya.jpg",
       caption: "Satyanarayan Katha gathering",
-      ceremony: "Satyanarayan Katha"
-    }
+      ceremony: "Satyanarayan Katha",
+    },
   ],
   videos: [
     {
       id: 1,
       title: "Sacred Mantras and Their Significance",
-      thumbnail: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-      duration: "10:25"
+      description: "Learn about the power and meaning of ancient Vedic mantras",
+      thumbnail:
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      duration: "10:25",
+      ceremony: "Spiritual Teaching",
     },
     {
       id: 2,
-      title: "Vedic Wedding Ceremony Highlights", 
-      thumbnail: "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=400&h=300&fit=crop",
-      duration: "15:30"
-    }
-  ]
+      title: "Vedic Wedding Ceremony Highlights",
+      description:
+        "Complete wedding ceremony with traditional rituals and mantras",
+      thumbnail:
+        "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=400&h=300&fit=crop",
+      videoUrl: "/videos/wedding-video.mp4",
+      duration: "15:30",
+      ceremony: "Wedding Ceremony",
+    },
+    // {
+    //   id: 3,
+    //   title: "Griha Pravesh Ceremony",
+    //   description: "House warming ceremony with Vedic rituals and blessings",
+    //   thumbnail: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    //   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   duration: "12:45",
+    //   ceremony: "Griha Pravesh"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Satyanarayan Katha",
+    //   description: "Sacred storytelling session with devotional songs",
+    //   thumbnail: "https://images.unsplash.com/photo-1585252906018-0dff6ba5c96a?w=400&h=300&fit=crop",
+    //   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   duration: "18:20",
+    //   ceremony: "Satyanarayan Katha"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Havan Ceremony",
+    //   description: "Sacred fire ritual with chanting and offerings",
+    //   thumbnail: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    //   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   duration: "8:15",
+    //   ceremony: "Havan"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Navgraha Shanti Puja",
+    //   description: "Planetary peace ceremony for removing obstacles",
+    //   thumbnail: "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=400&h=300&fit=crop",
+    //   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   duration: "14:30",
+    //   ceremony: "Navgraha Shanti"
+    // }
+  ],
 };
 
 export const contactData = {
@@ -176,20 +227,20 @@ export const contactData = {
   email: "mj981816@gmail.com",
   address: "Malyalya Swamy Temple, Old City, Hyderabad - 500065",
   availability: "Available 7 days a week, 6:00 AM - 10:00 PM",
-  languages: ["Hindi", "Marathi", "Telugu", "English", "Sanskrit"]
+  languages: ["Hindi", "Marathi", "Telugu", "English", "Sanskrit"],
 };
 
 export const bookingSlots = [
   {
     date: "2024-07-15",
-    slots: ["06:00 AM", "08:00 AM", "10:00 AM", "04:00 PM", "06:00 PM"]
+    slots: ["06:00 AM", "08:00 AM", "10:00 AM", "04:00 PM", "06:00 PM"],
   },
   {
-    date: "2024-07-16", 
-    slots: ["06:00 AM", "08:00 AM", "02:00 PM", "06:00 PM"]
+    date: "2024-07-16",
+    slots: ["06:00 AM", "08:00 AM", "02:00 PM", "06:00 PM"],
   },
   {
     date: "2024-07-17",
-    slots: ["07:00 AM", "10:00 AM", "12:00 PM", "05:00 PM"]
-  }
+    slots: ["07:00 AM", "10:00 AM", "12:00 PM", "05:00 PM"],
+  },
 ];
