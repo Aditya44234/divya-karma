@@ -95,8 +95,8 @@ const Services = () => {
                     <span>{service.duration}</span>
                   </div>
                   <div className="flex items-center justify-center space-x-1 text-sm font-semibold text-orange-600">
-                    <IndianRupee size={14} />
-                    <span>{service.price}</span>
+                    {/* <IndianRupee size={14} />
+                    <span>{service.price}</span> */}
                   </div>
                 </div>
               </CardContent>
