@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Mail, Menu, Phone, X } from 'lucide-react';
+import { useState } from 'react';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -59,11 +59,11 @@ const Header = () => {
             <div className="hidden lg:flex items-center space-x-4 text-sm text-gray-600">
               <div className="flex items-center space-x-1">
                 <Phone size={16} className="text-orange-500" />
-                <span>+91 98765 43210</span>
+                <span>+91 8555808775</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail size={16} className="text-orange-500" />
-                <span>mohan.joshi.priest@gmail.com</span>
+                <span><a href="mailto:mj981816@gmail.com">mj981816@gmail.com</a></span>
               </div>
             </div>
             
@@ -103,11 +103,11 @@ const Header = () => {
                 <div className="flex flex-col space-y-2 text-sm text-gray-600">
                   <div className="flex items-center space-x-2">
                     <Phone size={16} className="text-orange-500" />
-                    <span>+91 98765 43210</span>
+                    <span>+91 8555808775</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail size={16} className="text-orange-500" />
-                    <span>mohan.joshi.priest@gmail.com</span>
+                    <span><a href="mailto:mj981816@gmail.com">mj981816@gmail.com</a></span>
                   </div>
                 </div>
                 <Button

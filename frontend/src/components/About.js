@@ -61,7 +61,7 @@ const About = () => {
               </Card>
               <Card className="text-center bg-gradient-to-br from-orange-50 to-amber-50 border-orange-200">
                 <CardContent className="p-4">
-                  <div className="text-2xl font-bold text-orange-700">25+</div>
+                  <div className="text-2xl font-bold text-orange-700">10+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </CardContent>
               </Card>
@@ -99,7 +99,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            {/* Education */}
+            {/* Education
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                 <GraduationCap className="text-orange-500 mr-2" size={24} />
@@ -113,7 +113,7 @@ const About = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Specializations */}
             <div>

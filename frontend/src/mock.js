@@ -6,8 +6,8 @@ export const priestData = {
   shloka: "ॐ नमो भगवते वासुदेवाय",
   shlokaTranslation: "Om Namo Bhagavate Vasudevaya",
   description: "Experienced Hindu priest dedicated to preserving ancient traditions and conducting sacred rituals with devotion and authenticity.",
-  experience: "25+ years",
-  location: "Mumbai, Maharashtra"
+  experience: "10+ years",
+  location: "Old City, Hyderabad"
 };
 
 export const aboutData = {
@@ -172,11 +172,11 @@ export const mediaData = {
 };
 
 export const contactData = {
-  phone: "+91 98765 43210",
-  email: "mohan.joshi.priest@gmail.com",
-  address: "Shree Ganesh Mandir Complex, Andheri East, Mumbai - 400069",
+  phone: "+91 8555808775",
+  email: "mj981816@gmail.com",
+  address: "Malyalya Swamy Temple, Old City, Hyderabad - 500065",
   availability: "Available 7 days a week, 6:00 AM - 10:00 PM",
-  languages: ["Hindi", "Marathi", "Gujarati", "English", "Sanskrit"]
+  languages: ["Hindi", "Marathi", "Telugu", "English", "Sanskrit"]
 };
 
 export const bookingSlots = [

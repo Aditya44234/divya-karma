@@ -127,7 +127,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                     <p className="text-gray-700">{contactData.address}</p>
-                    <p className="text-sm text-gray-500">Mumbai & surrounding areas</p>
+                    <p className="text-sm text-gray-500">Hyderabad & surrounding areas</p>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-4">
               <Button
                 className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-6 h-auto flex-col space-y-2"
-                onClick={() => window.open('https://wa.me/919876543210', '_blank')}
+                onClick={() => window.open('https://wa.me/918555808775', '_blank')}
               >
                 <MessageCircle size={24} />
                 <span className="text-sm font-medium">WhatsApp</span>
@@ -162,7 +162,7 @@ const Contact = () => {
               <Button
                 variant="outline"
                 className="border-2 border-blue-300 text-blue-700 hover:bg-blue-50 p-6 h-auto flex-col space-y-2"
-                onClick={() => window.open('tel:+919876543210', '_self')}
+                onClick={() => window.open('tel:+918555808775', '_self')}
               >
                 <Phone size={24} />
                 <span className="text-sm font-medium">Call Direct</span>
@@ -176,7 +176,7 @@ const Contact = () => {
                   <div className="text-center">
                     <MapPin size={40} className="text-orange-500 mx-auto mb-2" />
                     <p className="text-gray-700 font-medium">Service Location</p>
-                    <p className="text-sm text-gray-600">Mumbai & Surrounding Areas</p>
+                    <p className="text-sm text-gray-600">Hyderabad & Surrounding Areas</p>
                   </div>
                 </div>
               </CardContent>

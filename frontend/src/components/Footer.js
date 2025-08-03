@@ -117,7 +117,7 @@ const Footer = () => {
                 <MapPin size={16} className="text-orange-300 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-orange-200 text-sm">{priestData.location}</p>
-                  <p className="text-orange-300 text-xs">& surrounding areas</p>
+                  <p className="text-orange-300 text-xs">Hyderabad & surrounding areas</p>
                 </div>
               </div>
               
