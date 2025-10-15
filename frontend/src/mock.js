@@ -102,32 +102,32 @@ export const servicesData = [
 export const testimonialsData = [
   {
     id: 1,
-    name: "Rajesh Sharma",
-    location: "Andheri, Mumbai",
+    name: "LalitaSekher Sevale",
+    location: "Damaiaguda, Hyderabad",
     text: "Pandit Mohan ji performed our Griha Pravesh with such devotion and knowledge. His explanation of each ritual made the ceremony very meaningful for our family. Highly recommended!",
     rating: 5,
     ceremony: "Griha Pravesh",
   },
   {
     id: 2,
-    name: "Priya Patel",
-    location: "Bandra, Mumbai",
+    name: "Durgesh Devkathe",
+    location: "Malakajgiri, Hyderabad",
     text: "We had our daughter's wedding conducted by Pandit ji. His attention to Vedic traditions and perfect pronunciation of mantras made our special day truly blessed.",
     rating: 5,
     ceremony: "Wedding Ceremony",
   },
   {
     id: 3,
-    name: "Amit Gupta",
-    location: "Powai, Mumbai",
+    name: "Santosh Reddy ",
+    location: "Rajendra Nagar, Hyderabad",
     text: "Regular Satyanarayan Katha at our home. Pandit Mohan ji is very punctual, knowledgeable, and creates a very peaceful atmosphere. Our whole family feels blessed.",
     rating: 5,
     ceremony: "Satyanarayan Katha",
   },
   {
     id: 4,
-    name: "Sunita Jain",
-    location: "Juhu, Mumbai",
+    name: "Rahul Suryavamshi",
+    location: "Kachiguda, Hyderabad",
     text: "The Navgraha Shanti ceremony helped us overcome many obstacles. Pandit ji's guidance and positive energy brought peace to our lives.",
     rating: 5,
     ceremony: "Navgraha Shanti",
@@ -160,6 +160,35 @@ export const mediaData = {
       caption: "Satyanarayan Katha gathering",
       ceremony: "Satyanarayan Katha",
     },
+    {
+      id: 5,
+      url: "/images/durgaSaptasiti.png",
+      caption: "Durga saptashati parayan ",
+      ceremony: "Durga saptashati parayan ",
+    },
+    {
+      id: 6,
+      url: "/images/ganapatiHomam.png",
+      caption: "Ganapati Homam",
+      ceremony: "Ganapati Homam",
+    },
+    {
+      id: 7,
+      url: "/images/marriageCeremoney.png",
+      caption: "Patni  Manoramma Dehi Havan",
+      ceremony: "Patini Manorama Dehi havan",
+    },
+    {
+      id: 8,
+      url: "/images/matruka.png",
+      caption: "Matruka Poojan",
+      ceremony: "Matruka Poojan",
+    },
+
+
+
+
+
   ],
   videos: [
     {
