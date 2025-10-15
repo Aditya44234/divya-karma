@@ -25,7 +25,7 @@ function App() {
                 <Services />
                 <Media />
                 <Testimonials />
-                <Contact />
+                {/* <Contact /> */}
               </>
             } />
           </Routes>
